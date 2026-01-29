@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BalatonFix Kft. – Szerelés és Karbantartás</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f7f7f7; color: #333; line-height: 1.6; }
+
+    /* NAV */
+    nav { background: #111827; padding: 12px 20px; position: sticky; top: 0; z-index: 1000; }
+    nav ul { display: flex; gap: 20px; list-style: none; max-width: 1100px; margin: auto; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #a5b4fc; }
+
+    /* HEADER */
+    header { background: linear-gradient(135deg, #0ea5e9, #2563eb); color: white; padding: 80px 20px; text-align: center; }
+    header h1 { font-size: 2.8rem; margin-bottom: 12px; }
+    header p { font-size: 1.15rem; opacity: 0.95; max-width: 600px; margin: auto; }
+    .btn { display: inline-block; margin-top: 24px; padding: 14px 32px; background: white; color: #2563eb; border-radius: 999px; text-decoration: none; font-weight: bold; transition: all 0.2s ease; }
+    .btn:hover { transform: scale(1.05); background: #e0f2fe; }
+
+    /* SECTION */
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    section h2 { font-size: 2rem; margin-bottom: 20px; color: #111827; }
+
+    /* CARDS */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .card { background: white; padding: 24px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); transition: transform 0.2s ease; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-bottom: 12px; color: #2563eb; }
+
+    /* CONTACT */
+    input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #d1d5db; font-size: 1rem; }
+    button { margin-top: 12px; padding: 12px 26px; background: #2563eb; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+
+    /* CTA */
+    .cta { background: #111827; color: white; padding: 70px 20px; text-align: center; }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 24px; font-size: 0.9rem; background: #e5e7eb; color: #374151; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Főoldal</a></li>
+    <li><a href="#services">Szolgáltatások</a></li>
+    <li><a href="#about">Rólunk</a></li>
+    <li><a href="#contact">Kapcsolat</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>BalatonFix Kft.</h1>
+  <p>Gyors és megbízható szerelési és karbantartási szolgáltatások a Balaton környékén.</p>
+  <a href="#contact" class="btn">Árajánlat kérés</a>
+</header>
+
+<section id="services">
+  <h2>Szolgáltatásaink</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Villanyszerelés</h3>
+      <p>Lakások és nyaralók teljes elektromos karbantartása és javítása.</p>
+    </div>
+    <div class="card">
+      <h3>Vízszerelés</h3>
+      <p>Csőtörés, bojler csere, csaptelep javítás és telepítés.</p>
+    </div>
+    <div class="card">
+      <h3>Karbantartás</h3>
+      <p>Nyaralók szezon előtti felkészítése és ellenőrzése.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>Rólunk</h2>
+  <p>A BalatonFix Kft. 2012 óta nyújt professzionális szerelési és karbantartási szolgáltatásokat magánszemélyek és vállalkozások számára. Tapasztalt szakembereink gyorsan és megbízhatóan dolgoznak, korrekt áron.</p>
+</section>
+
+<section id="contact">
+  <h2>Kapcsolat</h2>
+  <p>Email: info@balatonfix.hu | Telefon: +36 30 123 4567</p>
+  <form onsubmit="event.preventDefault(); alert('Üzenet elküldve! (demo)');">
+    <input type="text" placeholder="Neved" required />
+    <input type="email" placeholder="Email" required />
+    <textarea rows="4" placeholder="Üzenet"></textarea>
+    <button type="submit">Küldés</button>
+  </form>
+</section>
+
+<div class="cta">
+  <h2>Profi szerelés, gyors kiszállás</h2>
+  <p>Hívjon minket bizalommal!</p>
+</div>
+
+<footer>
+  <p>© 2026 BalatonFix Kft. – Minden jog fenntartva</p>
+</footer>
+
+</body>
+</html>
